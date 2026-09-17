@@ -32,4 +32,9 @@ func main(){
 		}
 		fmt.Println(n)
 	}
+
+	str := "hello world"
+	for _,char:=range str{
+		fmt.Println("%c",char)
+	}
 }
