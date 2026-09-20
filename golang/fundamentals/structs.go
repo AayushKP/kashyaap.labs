@@ -17,7 +17,9 @@ func (b Book) display() {
 	fmt.Println("Author:", b.Author)
 	fmt.Println("Pages:", b.Pages)
 }
-//The receiver (b Book) is what makes it a method associated with Book.
+
+// The receiver (b Book) is what makes display()
+// a method associated with the Book type.
 
 func main() {
 	book1 := Book{
@@ -47,5 +49,6 @@ func main() {
 		fmt.Println(book.Title)
 	}
 
+	// Call the method on book1
 	book1.display()
 }
